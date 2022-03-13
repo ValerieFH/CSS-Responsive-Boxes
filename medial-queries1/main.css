@@ -9,13 +9,13 @@ body {
   min-height: 100vh;
   justify-content: space-evenly;
   padding: 5px;
+  gap: 10px;
 }
 
 .a, .c {
   background-color: chocolate;
-  flex-grow: 1;x
+  flex-grow: 1;
   border: 1px solid black;
-  
 }
 
 .b {

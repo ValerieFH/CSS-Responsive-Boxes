@@ -1,3 +1,61 @@
 body {
   background: peachpuff;
+  margin: 0;
+}
+
+* {
+  border: 1px solid black;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  background: darkgray;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  min-height: 100vh;
+  justify-content: space-evenly;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  min-height: 33vh;
+  justify-content: space-evenly;
+}
+
+.a {
+  min-width: 90vw;
+  min-height: 12vh;
+}
+
+.h {
+  min-width: 90vw;
+  min-height: 33vh;
+}
+
+.b, .c, .d, .e, .f, .g {
+  min-height: 12vh;
+  min-width: 28vw;
+}
+
+@media (min-width: 600px) {
+  .a {
+    min-height: 30vh;
+  }
+  .wrapper {
+    max-width: 72vw;
+  }
+
+  .h {
+    min-width: 22vw;
+  }
+
+  .b, .c, .d, .e, .f, .g {
+    min-height: 30vh;
+    min-width: 22vw;
+  }
 }
